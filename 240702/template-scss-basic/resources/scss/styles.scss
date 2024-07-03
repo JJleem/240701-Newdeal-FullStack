@@ -1,6 +1,7 @@
 @import "variables";
 @import "mixins";
 @import "reset";
-@import "comm";
-@import "main";
-@import "sub1";
+//component
+@import "component/include";
+//pattern
+@import "pattern/!p_include";
