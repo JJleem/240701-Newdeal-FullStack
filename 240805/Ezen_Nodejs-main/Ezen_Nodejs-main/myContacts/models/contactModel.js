@@ -13,8 +13,14 @@ const contactSchema = new mongoose.Schema(
     timestamps: true, // 데이터 추가 수정 될때 시간 함께 기록됨
   }
 );
+const registerSchema = new mongoose.Schema({
+  username: { type: String, required: true },
+  password: { type: String, required: true },
+});
 //스카마 => 모델
 //mongoose.model(모델명(대문자로 ), 스키마명)
-const Contact = mongoose.model("Contact", contactSchema);
 
-module.exports = Contact;
+const Contact = mongoose.model("Contact", contactSchema);
+const Register = mongoose.model("Register", registerSchema);
+
+module.exports = { Register, Contact };

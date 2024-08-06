@@ -1,3 +1,14 @@
 npm i mongoose dotenv
 
 npm i express-async-handler
+
+ejs엔진 공통 태그 
+<%=변수 %> 
+<%자바스크립트%> = 자바스크립트사용
+<%-HTML%> = HTML태그 사용하기
+
+Ajax 기법
+put 또는 delete 로 보내기할때
+npm i method-override
+
+npm i bcript 해쉬코드걸어줌

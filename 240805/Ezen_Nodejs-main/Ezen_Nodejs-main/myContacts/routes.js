@@ -6,11 +6,12 @@ const {
   getContact,
   updateContact,
   deleteContact,
+  getContactForm,
 } = require("./controllers/contactController");
 // 모든 연락처 가져오기
+router.route("/").get(getAllContacts);
 // 새 연락처 추가하기
-router.route("/").get(getAllContacts).post(createContact);
-
+router.route("/add").get(getContactForm).post(createContact);
 // 연락처 상세보기
 // 연락처 수정하기
 // 연락처 삭제하기
